@@ -1,4 +1,5 @@
-body {
-  font-size: 120px;
-  color: green;
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #eee;
 }
