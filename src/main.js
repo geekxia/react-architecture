@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom'
 
 import App from './App.js'
 
+// 用于把react组件渲染在app这个DOM节点
 ReactDOM.render(<App />, document.getElementById('app'))
 
-if(module.hot) {
+// 解决热更新的问题
+if (module.hot) {
   module.hot.accept('./App.js', function() {
-    const NewApp = require('./App.js').default
-    ReactDOM.render(<App />, document.getElementById('app'))
-    // console.log('module.hot', module.hot)
-    console.log('App发生了更新')
+    console.log('文件发生了变化')
+    var NewApp = require('./App.js').default
+    ReactDOM.render(<NewApp />, document.getElementById('app'))
   })
 }

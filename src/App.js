@@ -1,16 +1,16 @@
 import React from 'react'
-import '@/assets/css/common.scss'
-import '@/assets/css/style.css'
+import Layout from '@/components/layout/Layout'
 
-import HelloWorld from '@/components/HelloWorld'
-
-function App() {
-  return (
-    <div>
-      <h1>hello react 00</h1>
-      <HelloWorld></HelloWorld>
-    </div>
-  )
+// 第一个react组件
+class App extends React.Component {
+  // render定义了组件的DOM结构，使用JSX语法
+  render() {
+    return (
+      <div>
+        <Layout />
+      </div>
+    )
+  }
 }
 
 export default App
