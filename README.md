@@ -23,3 +23,18 @@ babel-loader
 安装 react react-dom
 
 配置 @ 绝对路径： config.resolve.alias = { '@': path.resolve()}
+
+**antd**
+
+```
+npm install antd -S
+
+import 'antd/dist/antd.css'
+```
+
+**router**
+
+```
+npm install react-router-dom -S  // 路由组件
+npm install react-router   // withRouter高阶组件
+```

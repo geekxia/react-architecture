@@ -29,4 +29,18 @@
     bottom: 0;
     background: #ccc;
   }
+
+  .nav {
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 1em;
+    &>i {
+      margin-right: 5px;
+    }
+    .on {
+      color: blue;
+    }
+  }
 }

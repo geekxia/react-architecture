@@ -1,5 +1,5 @@
 import React from 'react'
-import Child from './Child'
+import Child from './component/Child'
 
 class TestProps extends React.Component {
   // 构造器函数，此函数在类实例化时被调用

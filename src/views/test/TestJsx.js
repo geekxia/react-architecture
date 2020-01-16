@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HelloJsx from './HelloJsx'
+import HelloJsx from './component/HelloJsx'
 
 // JSX是一个变量，是一个对象 => 最终被 React.createElement() 转化成浏览器能够运行的 React元素或React组件
 // const hello = 'hello react'
