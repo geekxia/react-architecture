@@ -15,7 +15,7 @@ export default class TestLifecycle extends React.Component {
   // 一、实例化阶段(3个钩子)
 
   // 该钩子函数即将过时
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     console.log('--------------- life will mount')
   }
   // render() 执行
@@ -36,7 +36,7 @@ export default class TestLifecycle extends React.Component {
 
   // 当父组件传递过来的props发生改变时，触发该钩子
   // 该钩子函数即将过时
-  componentWillReceiveProps() {
+  UNSAFE_componentWillReceiveProps() {
     console.log('--------------- life will recieve props')
   }
 
@@ -46,7 +46,7 @@ export default class TestLifecycle extends React.Component {
     return true
   }
   // 更新前
-  componentWillUpdate() {
+  UNSAFE_componentWillUpdate() {
     console.log('--------------- life will update')
   }
   // // render() 执行
