@@ -14,8 +14,18 @@ import HelloJsx from './HelloJsx'
 
 class TestJsx extends Component {
 
+  componentDidMount() {
+    console.log('this props', this.props)
+  }
+
   click() {
     console.log('父组件')
+  }
+
+  skip() {
+    let num = Math.random()
+    // 路由跳转
+    this.props.history.push('/combine/'+num)
   }
 
   toggle(flag) {
@@ -38,6 +48,7 @@ class TestJsx extends Component {
       }
       { /*父组件向子组件传值，传自定义事件*/ }
       <HelloJsx title='你好' click={this.click} />
+      <button onClick={this.skip.bind(this)}>跳转至"组件复用"页面</button>
       </div>
     )
   }
